@@ -1,2 +1,4 @@
 nama:ziyad
 umur:25 tahun
+email: ziyadcamela@gmail.com
+telegram akun : @ziyadziyad
