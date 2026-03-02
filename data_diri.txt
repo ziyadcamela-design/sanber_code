@@ -1,0 +1,2 @@
+nama:ziyad
+umur:25 tahun
