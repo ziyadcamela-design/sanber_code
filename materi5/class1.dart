@@ -10,8 +10,14 @@ class Buah {
 }
 
 class Mangga extends Buah{
-  String rasa;
-  Mangga(String nama, String warna, int harga, this.rasa) : super(nama, warna, harga);
+  late String _rasa;
+  String get rasa => _rasa;
+  set rasa(String rasa){
+    _rasa = rasa;
+  }
+  Mangga(String nama, String warna, int harga, String rasa) : super(nama, warna, harga){
+    _rasa = rasa;
+  }
   void beliMangga(){
     print("Beli buah $nama dengan rasa $rasa");
   }
@@ -24,6 +30,7 @@ void main(List<String> args) {
   print(buah.warna);
   print(buah.harga);
   buah.beli();
+  mangga.rasa = "pahit";
   print(mangga.nama);
   print(mangga.warna);
   print(mangga.harga);
