@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+
+class SettingsPage extends StatelessWidget {
+  const SettingsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Settings'),
+      ),
+      body: Container(
+        child: Center(
+          child: ElevatedButton(
+            
+            onPressed: () {
+              Navigator.pushNamed(context, '/get-started');
+            },
+          child: const Text('Logout'),
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -48,15 +48,21 @@ class GetStartedPage extends StatelessWidget {
 
               const SizedBox(height: 40),
 
+              // Tombol Masuk
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 width: double.infinity,
                 height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, '/home');
+                  },
                   child: Text(
                     'Masuk',
                     style: GoogleFonts.roboto(
@@ -70,12 +76,12 @@ class GetStartedPage extends StatelessWidget {
 
               const SizedBox(height: 15),
 
+              // Tombol Daftar
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(color: Colors.blue),
                 ),
