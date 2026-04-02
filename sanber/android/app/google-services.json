@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534689741622",
+    "project_id": "sanber-app-test",
+    "storage_bucket": "sanber-app-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534689741622:android:0e76683e77c6b022351197",
+        "android_client_info": {
+          "package_name": "com.sanberapp.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaOHkK2MvdJwuTMhXgjZ1ldy7uuVHf7bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
